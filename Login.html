@@ -54,7 +54,7 @@
 				//Facebook login
 				
 						function getUserData() {
-			FB.api('/me', function(response) {
+			FB.api('/', function(response) {
 				document.getElementById('response').innerHTML = 'Hello ' + response.name;
 			});
 		}
