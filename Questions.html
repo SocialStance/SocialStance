@@ -5,10 +5,10 @@
 		<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
 			<!-- Your platform (jquery) scripts. -->
 
-<!-- 
-<link href="https://surveyjs.azureedge.net/0.12.3/survey.css" type="text/css" rel="stylesheet" />
-<script src="https://surveyjs.azureedge.net/0.12.3/survey.jquery.min.js"></script>
- -->
+
+	<link href="https://surveyjs.azureedge.net/0.12.3/survey.css" type="text/css" rel="stylesheet" />
+	<script src="https://surveyjs.azureedge.net/0.12.3/survey.jquery.min.js"></script>
+
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -25,28 +25,7 @@
 	
 		<script>
 		
-Survey.defaultBootstrapCss.navigationButton = "btn btn-primary";
-Survey.Survey.cssType = "bootstrap";
-var survey = new Survey.Model({ questions: [
-    {type: "text", name: "name", title: "Your name:"},
-    {type: "text", name: "email", title: "Your e-mail"},
-    { type: "checkbox", name: "car", title: "What car are you driving?", isRequired: true, colCount: 4,
-        choices: ["None", "Ford", "Vauxhall", "Volkswagen", "Nissan", "Audi", "Mercedes-Benz", "BMW", "Peugeot", "Toyota", "Citroen"] }
-]});
-var data = {name:"John Doe", email: "johndoe@nobody.com", car:["Ford"]};
-var surveyValueChanged = function (sender, options) {
-    var el = document.getElementById(options.name);
-    if(el) {
-        el.value = options.value;
-    }
-};
 
-
-$("#surveyElement").Survey({
-    model: survey,
-    data: data,
-    onValueChanged: surveyValueChanged
-});
 		
 		
 // var surveyJSON = {pages:[{name:"page1",questions:[{type:"radiogroup",choices:[{value:"1",text:"first item"},{value:"2",text:"second item"},{value:"3",text:"third item"}],name:"question2"}]}]}
