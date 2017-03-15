@@ -3,11 +3,10 @@
 		<title>Questions.html</title>
 		<link rel="stylesheet" type="text/css" href="GamingforGood.css">
 		<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
-			<!-- Your platform (jquery) scripts. -->
+<!-- Your platform (jquery) scripts. -->
 
-
-	<link href="https://surveyjs.azureedge.net/0.12.3/survey.css" type="text/css" rel="stylesheet" />
-	<script src="https://surveyjs.azureedge.net/0.12.3/survey.jquery.min.js"></script>
+<link href="https://surveyjs.azureedge.net/0.12.3/survey.css" type="text/css" rel="stylesheet" />
+<script src="https://surveyjs.azureedge.net/0.12.3/survey.jquery .min.js"></script>
 
 
 	<!-- Latest compiled and minified JavaScript -->
@@ -20,7 +19,7 @@
 	
 	
 	
-	<div id="surveyElement">this is the survey container.  7</div>
+	<div id="surveyContainer">this is the survey container.  7</div>
 	
 	
 		<script>
@@ -28,17 +27,17 @@
 
 		
 		
-// var surveyJSON = {pages:[{name:"page1",questions:[{type:"radiogroup",choices:[{value:"1",text:"first item"},{value:"2",text:"second item"},{value:"3",text:"third item"}],name:"question2"}]}]}
-// 
-// function sendDataToServer(survey) {
-//     survey.sendResult('51602766-d8d8-43d8-82a3-e5caf2883536');
-// }
-// var survey = new Survey.Model(surveyJSON);
-// $("#surveyContainer").Survey({
-//     model: survey,
-//     onComplete: sendDataToServer
-// });
-// 					
+var surveyJSON = {pages:[{name:"page1",questions:[{type:"radiogroup",choices:[{value:"1",text:"first item"},{value:"2",text:"second item"},{value:"3",text:"third item"}],name:"question2"}]}]}
+
+function sendDataToServer(survey) {
+    survey.sendResult('51602766-d8d8-43d8-82a3-e5caf2883536');
+}
+var survey = new Survey.Model(surveyJSON);
+$("#surveyContainer").Survey({
+    model: survey,
+    onComplete: sendDataToServer
+});
+					
 					
 					
   				// Initialize Firebase
