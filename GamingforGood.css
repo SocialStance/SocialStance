@@ -1,12 +1,12 @@
 #banner{
-	font-size:"6000";
-	font-color:"#=00040d";
+	font-size:600px;
+	font-color:#00040d;
 	font-family:"HappyMonkey";
 	}
 	
  a:visited{
-	font-color:"#=000000";
+	font-color:#000000;
 	}
 a:link{
-	font-color:"#=000000";
+	font-color:#000000;
 	}
