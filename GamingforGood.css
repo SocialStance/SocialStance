@@ -13,3 +13,8 @@ a:link{
 #PageLink{
 	font-size:30px;
 	}
+
+#description {
+	width: 800px;
+	font-size: 16px;
+}
